@@ -14,7 +14,7 @@ export default function LandingSection() {
       {/* Overlay */}
       <div className="title relative z-10">
         <h3 className="mb-4 handwriting">A warm welcome to</h3>
-        <h2 className="font-bold logo-heading text-4xl">Just Natural by Rod</h2>
+        <h2 className=" text-4xl font-handWrite ">Just Natural by Rod</h2>
         <h5 className="sm:inline-block mt-4 sm:mr-2 mb-2 text-gray-200">
           Adelaide,{" "}
         </h5>

@@ -19,7 +19,7 @@ function Portfolio() {
               src={item.imageUrl}
               alt={`Image ${item.id}`}
               fill={true}
-              className="w-full h-full object-cover shadow-sm rounded-lg border hover:border-brown-100 hover:scale-105 hover:z-50 transition-all"
+              className=" w-full h-full object-cover shadow-sm rounded-lg border hover:border-brown-100 hover:scale-105 hover:z-50 transition-all"
               style={{
                 maxHeight: "100%",
                 maxWidth: "100%",

@@ -1,0 +1,48 @@
+{
+  "short_name": "Just Natural by Rod",
+  "name": "Just Natural by Rod",
+  "icons": [
+    {
+      "src": "/vercel.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
+  "id": "/?source=pwa",
+  "start_url": "/?source=pwa",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/#home",
+  "theme_color": "#3367D6",
+  "shortcuts": [
+    {
+      "name": "Investment Packages",
+      "short_name": "Packages",
+      "description": "View investment packages",
+      "url": "/packages",
+      "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Our Stories",
+      "short_name": "Stories",
+      "description": "View our stories",
+      "url": "/stories",
+      "icons": [{ "src": "/images/tomorrow.png", "sizes": "192x192" }]
+    }
+  ],
+  "description": "Just Natural by Rod's Official Website",
+  "screenshots": [
+    {
+      "src": "/images/screenshot1.png",
+      "type": "image/png",
+      "sizes": "540x720",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/images/screenshot2.jpg",
+      "type": "image/jpg",
+      "sizes": "720x540",
+      "form_factor": "wide"
+    }
+  ]
+}

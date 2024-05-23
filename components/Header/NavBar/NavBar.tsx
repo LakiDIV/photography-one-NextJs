@@ -7,7 +7,27 @@ import "./navbar.css";
 import { Home } from "lucide-react";
 import { usePathname } from "next/navigation";
 
+// Navigation
+export const NAV_LINKS = [
+  { label: "Home", href: "/#home", key: "home" },
+  { label: "Packages", href: "/packages", key: "packages" },
+  { label: "Stories", href: "/stories", key: "stories" },
+  { label: "About", href: "/about", key: "about" },
+  { label: "FAQs", href: "/faqs", key: "faqs" },
+  { label: "Say Hello", href: "/contact", key: "contact" },
+];
+
 export default function NavBar() {
+  function handleMenuItemClick() {
+    // Find the checkbox and uncheck it
+    const checkbox = document.getElementById(
+      "menuToggleCheckbox"
+    ) as HTMLInputElement;
+    if (checkbox) {
+      checkbox.checked = false;
+    }
+  }
+
   const pathname = usePathname();
   const [isNavFixed, setIsNavFixed] = useState(false);
 
@@ -61,7 +81,30 @@ export default function NavBar() {
         role="navigation"
         data-header
       >
-        {" "}
+        {/* Mobile Hamburger Menu */}
+        <div id="menuToggle" className="absolute left-8 block z-10 md:hidden">
+          <input
+            type="checkbox"
+            className="block cursor-pointer absolute "
+            id="menuToggleCheckbox"
+          />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu" className="absolute">
+            {NAV_LINKS.map((link) => (
+              <Link
+                href={link.href}
+                key={link.key}
+                onClick={() => handleMenuItemClick()}
+              >
+                <li className=" ">
+                  <div className="nav-item">{link.label}</div>
+                </li>
+              </Link>
+            ))}
+          </ul>
+        </div>{" "}
         {/* Left-side links */}
         <div className="hidden md:flex items-center ml-auto p-4">
           <Link href="/#home">

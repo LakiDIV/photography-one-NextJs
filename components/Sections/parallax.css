@@ -1,0 +1,163 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+
+/* Typography */
+/**************************/
+
+/* .first-character {
+  font-weight: 400;
+  float: left;
+  font-size: 84px;
+  line-height: 64px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+} */
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {
+  background: white;
+  padding: 4cqmax;
+  margin: 0 auto;
+  text-align: center;
+  font-size: xx-large;
+}
+#parallax-world-of-ugg .title h1 {
+  font-size: 35px;
+  letter-spacing: 8px;
+}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {
+  background: white;
+  padding: 60px;
+  width: 820px;
+  margin: 0 auto;
+  text-align: justify;
+}
+#parallax-world-of-ugg .block-gray {
+  background: #f2f2f2;
+  padding: 60px;
+}
+#parallax-world-of-ugg .section-overlay-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(249, 172, 7);
+  opacity: 0.7;
+}
+
+/* Common styles for parallax sections */
+#parallax-world-of-ugg .parallax-one,
+#parallax-world-of-ugg .parallax-two,
+#parallax-world-of-ugg .parallax-three {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#parallax-world-of-ugg .parallax-one {
+  border-radius: 0.4rem;
+  background-image: linear-gradient(
+      rgba(56, 50, 40, 0.5),
+      rgba(15, 14, 13, 0.5)
+    ),
+    url("https://ik.imagekit.io/cjmwukblm/Just%20Natural%20by%20Rod//Portfolio/0M4A0316-2.jpg?updatedAt=1715497037143");
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-attachment: fixed;
+}
+
+#parallax-world-of-ugg .parallax-two {
+  border-radius: 0.4rem;
+  background-image: linear-gradient(
+      rgba(56, 50, 40, 0.5),
+      rgba(15, 14, 13, 0.5)
+    ),
+    url("https://ik.imagekit.io/cjmwukblm/Just%20Natural%20by%20Rod//Portfolio/DSC03742-2.jpg?updatedAt=1715496231912");
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-attachment: fixed;
+}
+
+#parallax-world-of-ugg .parallax-three {
+  background-image: url("https://images.unsplash.com/photo-1530035415911-95194de4ebcc?q=80&amp;w=2670&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-attachment: fixed;
+}
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg .line-break {
+  border-bottom: 1px solid black;
+  width: 150px;
+  margin: 0 auto;
+}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {
+    padding: 40px;
+    width: 620px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {
+    padding: 20px;
+    width: 520px;
+  }
+
+  #parallax-world-of-ugg .block {
+    padding: 20px;
+  }
+  #parallax-world-of-ugg .parallax-one,
+  #parallax-world-of-ugg .parallax-two,
+  #parallax-world-of-ugg .parallax-three {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {
+    padding: 30px 15px;
+    width: 300px;
+  }
+}
+
+/* Mobile-friendly styling without parallax effect */
+@media (max-width: 767px) {
+  #parallax-world-of-ugg .parallax-one {
+    background-image: linear-gradient(
+        rgba(76, 64, 25, 0.3),
+        rgba(29, 19, 15, 0.3)
+      ),
+      url("https://ik.imagekit.io/cjmwukblm/tr:w-800/Just%20Natural%20by%20Rod//Portfolio/0M4A0316-2.jpg?updatedAt=1715497037143");
+  }
+
+  #parallax-world-of-ugg .parallax-two {
+    background-image: linear-gradient(
+        rgba(56, 50, 40, 0.3),
+        rgba(15, 14, 13, 0.3)
+      ),
+      url("https://ik.imagekit.io/cjmwukblm/tr:w-800/Just%20Natural%20by%20Rod//Portfolio/DSC03742-2.jpg?updatedAt=1715496231912");
+  }
+
+  #parallax-world-of-ugg .parallax-one,
+  #parallax-world-of-ugg .parallax-two,
+  #parallax-world-of-ugg .parallax-three {
+    background-attachment: scroll;
+    background-color: rgb(207, 196, 176);
+    background-blend-mode: multiply;
+    padding: 6rem 1rem;
+  }
+  #parallax-world-of-ugg .title {
+  font-size: large;
+}
+}

@@ -16,7 +16,7 @@ export const PACKAGES_DATA = [
       "(Cleaning Fees Applies)",
       "Option to Purchase More Edited Images",
     ],
-    oldprice: 360,
+
     price: 350,
   },
   {
@@ -40,7 +40,7 @@ export const PACKAGES_DATA = [
   {
     id: "newborn-silver-package",
     name: "Silver Package",
-    type: "New Born",
+    type: "Newborn",
     image:
       "https://ik.imagekit.io/cjmwukblm/tr:w-600/Just%20Natural%20by%20Rod/Portfolio/4B0A0297-2.jpg?updatedAt=1715496919406",
 
@@ -57,7 +57,7 @@ export const PACKAGES_DATA = [
   {
     id: "newborn-gold-package",
     name: "Gold Package",
-    type: "New Born",
+    type: "Newborn",
     image:
       "https://ik.imagekit.io/cjmwukblm/tr:w-600/Just%20Natural%20by%20Rod/Home/0M4A2168-2.jpg?updatedAt=1715167131983",
 
@@ -74,7 +74,7 @@ export const PACKAGES_DATA = [
   {
     id: "newborn-platinum-package",
     name: "Platinum Package",
-    type: "New Born",
+    type: "Newborn",
     image:
       "https://ik.imagekit.io/cjmwukblm/tr:w-600/Just%20Natural%20by%20Rod/Portfolio/4B0A2143-2.jpg?updatedAt=1715496230970",
 

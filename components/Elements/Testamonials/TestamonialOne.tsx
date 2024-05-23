@@ -15,12 +15,14 @@ import "swiper/css/navigation";
 // import required modules
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import TestamonialContent from "./Swiper/TestamonialContent";
+import SectionHeader from "../Headings/SectionHeader";
 
 const TestimonialOne: React.FC = () => {
   const testamonialContainerClass = "bg-white border shadow-sm ";
 
   return (
-    <div className="p-4">
+    <div className="p-2 m-6">
+      <SectionHeader title="What Our Clients Say" />
       <Swiper
         spaceBetween={30}
         // pagination={{

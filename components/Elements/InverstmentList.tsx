@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 
 import "./InverstmentList.css";
+import { ChevronRight, Clock, Dot } from "lucide-react";
 
 export const metadata = {
   title: "Packages",
@@ -37,7 +38,7 @@ function InverstmentList() {
         <div key={type}>
           <h3
             id={`#${type.toLowerCase().replace(" ", "-")}`}
-            className="mb-4 border p-4 text-center rounded-md text-2xl mt-10 pkgCategory bg-gradient-to-r from-cyan-300 via-cyan-500 to-cyan-300 text-gray-100 shadow-sm textShadow-md"
+            className="mb-4 border p-4 text-center rounded-md text-2xl mt-10 handWrite bg-gradient-to-b from-amber-500 to-orange-400 text-gray-100 shadow-sm textShadow-md"
           >
             {type} Packages
           </h3>
@@ -52,7 +53,7 @@ function InverstmentList() {
             >
               {/* Image (on top for smaller displays, on the left or right for larger displays) */}
               <div
-                className={`relative h-64 lg:h-96 lg:w-96 mb-4 lg:mb-0  ${
+                className={`relative h-64 lg:h-96 lg:w-96 lg:mb-0  ${
                   index % 2 === 1 ? "lg:order-2" : ""
                 }`}
               >
@@ -62,37 +63,39 @@ function InverstmentList() {
                   fill={true}
                   sizes="(max-width: 768px) 100vw, 33vw"
                   style={{ objectFit: "cover" }}
-                  className="rounded-lg p-1 pkgThumbnail"
+                  className="rounded-lg p-1 fadeIn"
                 />
               </div>
 
               {/* Package details */}
               <div
                 className={`flex-grow lg:order-2 p-4 ${
-                  index % 2 === 1 ? "lg:mr-8" : "lg:ml-8"
+                  index % 2 === 1 ? "lg:mx-4" : "lg:mx-4"
                 } flex flex-col justify-center`}
               >
-                <h4 className="text-3xl font-bold mb-4 text-primary text-brown-500">
+                <h4 className="text-2xl font-bold mb-3 text-primary text-brown-500">
                   {pkg.name}
                 </h4>
-                <p className="mb-4 text-brown-400">{pkg.description}</p>
+                <p className="mb-4 text-brown-400 font-bold opacity-75 text-sm ">
+                  {pkg.description}
+                </p>
                 <ul className="mb-4">
                   {pkg.features.map((feature, featureIndex) => (
                     <p
                       key={featureIndex}
-                      className="text-brown-400 mb-1 font-semibold text-sm bg-gray-400 shadow-sm bg-opacity-10 px-1  rounded-md"
+                      className="text-gray-700 mb-1 font-semibold text-xs bg-gray-400 shadow-sm bg-opacity-10 p-1 pl-2 rounded-md"
                     >
                       {feature}
                     </p>
                   ))}
                 </ul>
-                <hr className="my-4" />
+                <hr className="mb-6" />
                 {pkg.oldprice && (
                   <p className="text-brown-400 text-right line-through mb-2 text-xl opacity-30">
                     was ${pkg.oldprice}
                   </p>
                 )}
-                <p className="text-xl font-bold text-right text-primary text-brown-500">
+                <p className="text-xl font-bold text-right text-primary text-brown-500 mb-2">
                   {pkg.oldprice && <span>Now </span>}
                   <span className="bg-primary p-2 rounded-md text-gray-50">
                     ${pkg.price}

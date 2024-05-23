@@ -1,15 +1,31 @@
+import Image from "next/image";
 import React from "react";
-import { CircleUserRound, Image, Minus, Quote } from "lucide-react";
-import { SwiperSlide } from "swiper/react";
 
-function CarouselContent() {
+interface CarouselContentProps {
+  imageUrl: string;
+  altText?: string;
+  imageWidth?: number;
+  imageHeight?: number;
+}
+
+const CarouselContent: React.FC<CarouselContentProps> = ({
+  imageUrl,
+  altText = "This image is missing an alt text",
+  imageWidth = 400,
+  imageHeight = 400,
+}) => {
   return (
-    <div className=" bg-red-700 ">
-      <span className=" absolute right-0 m-4 text-zinc-300 text-3xl ">
-        <Image />
-      </span>
+    <div className="relative bg-secondary text-primery w-full h-full">
+      <Image
+        alt={altText}
+        src={imageUrl}
+        width={imageWidth}
+        height={imageHeight}
+        style={{ objectFit: "cover" }}
+        className="w-full h-full shadow-md"
+      />
     </div>
   );
-}
+};
 
 export default CarouselContent;

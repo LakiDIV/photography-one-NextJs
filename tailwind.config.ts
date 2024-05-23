@@ -10,6 +10,10 @@ const config = {
   ],
   prefix: "",
   theme: {
+    fontFamily: {
+      handWrite: ["Dancing Script", "cursive"],
+      boldWrite: ["Courgette", "cursive"],
+    },
     container: {
       center: true,
       padding: "2rem",

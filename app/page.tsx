@@ -4,11 +4,18 @@ import ImageBtn from "@/components/Elements/Backlinks/ImageBtn/ImageBtn";
 import TestamonialOne from "@/components/Elements/Testamonials/TestamonialOne";
 import NavBar from "@/components/Header/NavBar/NavBar";
 import LandingSection from "@/components/Sections/Landing/LandingSection";
-import SectionOne from "@/components/Sections/SectionOne";
 import { Link2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import SliderCarousel from "@/components/Elements/SliderCarousel/SliderCarousel";
+import TextCardInsideImage from "@/components/Elements/ImageGallery/TextCardInsideImage";
+import OverlapedCard from "@/components/Elements/ImageGallery/OverlapedCard";
+import WardrobeCarousel from "@/components/Elements/Wardrobe/WardrobeCarousel";
+import TestOverflow from "@/components/Elements/ImageGallery/TestOverflow";
+import OurStoriesSection from "@/components/Sections/Home/OurStories";
+import ParallaxOne from "@/components/Sections/ParallaxOne";
+import ParallaxTwo from "@/components/Sections/ParallaxTwo";
+import LetsTalkSection from "@/components/Sections/Home/LetsTalk";
 
 export default function Home() {
   return (
@@ -16,17 +23,31 @@ export default function Home() {
       <LandingSection />
       <NavBar />
 
-      <SliderCarousel />
-      <div className="relative flex flex-col items-center justify-center h-96 bg-gray-100">
-        ___________________
+      <div className="relative max-w-7xl mx-auto">
+        <SliderCarousel />
       </div>
-      <div className="bg-gray-100 mx-auto max-w-5xl pb-2">
-        <SectionOne />
+      <br />
+      <br />
+      <div className="relative flex flex-col items-center justify-center max-w-5xl mx-auto">
+        <OurStoriesSection />
 
-        <ImageBtn />
+        {/* <TestOverflow /> */}
+        {/* <OverlapedCard /> */}
+      </div>
 
-        <div className=" relative flex flex-col items-center justify-center h-screen bg-gray-100"></div>
+      <ParallaxOne />
+
+      <div className="max-w-5xl mx-auto  pb-2">
         <TestamonialOne />
+      </div>
+
+      <ParallaxTwo />
+
+      <div className="relative flex flex-col items-center justify-center max-w-5xl mx-auto">
+        <LetsTalkSection />
+      </div>
+
+      <div className="bg-gray-100  mx-auto max-w-5xl p-2">
         <LinkToFAQs />
       </div>
     </div>
