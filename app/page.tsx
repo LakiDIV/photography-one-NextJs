@@ -8,14 +8,11 @@ import { Link2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import SliderCarousel from "@/components/Elements/SliderCarousel/SliderCarousel";
-import TextCardInsideImage from "@/components/Elements/ImageGallery/TextCardInsideImage";
-import OverlapedCard from "@/components/Elements/ImageGallery/OverlapedCard";
-import WardrobeCarousel from "@/components/Elements/Wardrobe/WardrobeCarousel";
-import TestOverflow from "@/components/Elements/ImageGallery/TestOverflow";
-import OurStoriesSection from "@/components/Sections/Home/OurStories";
 import ParallaxOne from "@/components/Sections/ParallaxOne";
 import ParallaxTwo from "@/components/Sections/ParallaxTwo";
 import LetsTalkSection from "@/components/Sections/Home/LetsTalk";
+import FeaturedWorkSection from "@/components/Sections/Home/FeaturedWork";
+import OurServicesSection from "@/components/Sections/Home/OurServices";
 
 export default function Home() {
   return (
@@ -28,26 +25,25 @@ export default function Home() {
       </div>
       <br />
       <br />
-      <div className="relative flex flex-col items-center justify-center max-w-5xl mx-auto">
-        <OurStoriesSection />
-
-        {/* <TestOverflow /> */}
-        {/* <OverlapedCard /> */}
+      <div className="relative flex flex-col items-center justify-center max-w-6xl mx-auto">
+        <hr className="my-4" />
+        <FeaturedWorkSection />
       </div>
 
       <ParallaxOne />
 
-      <div className="max-w-5xl mx-auto  pb-2">
+      <div className="max-w-6xl mx-auto  pb-2">
+        <OurServicesSection />
         <TestamonialOne />
       </div>
 
       <ParallaxTwo />
 
-      <div className="relative flex flex-col items-center justify-center max-w-5xl mx-auto">
+      <div className="relative flex flex-col justify-center max-w-5xl mx-auto border p-6  rounded-md mb-6 ">
         <LetsTalkSection />
       </div>
 
-      <div className="bg-gray-100  mx-auto max-w-5xl p-2">
+      <div className="bg-gray-100  mx-auto max-w-6xl p-2">
         <LinkToFAQs />
       </div>
     </div>

@@ -3,7 +3,7 @@ import SectionHeader from "@/components/Elements/Headings/SectionHeader";
 import Image from "next/image";
 import React from "react";
 
-function OurStoriesSection() {
+function FeaturedWorkSection() {
   return (
     <div className="m-4 p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
       <div className="w-full flex flex-col justify-center items-start">
@@ -17,30 +17,13 @@ function OurStoriesSection() {
           together, capturing these moments and weaving them into the tapestry
           of our shared history.
         </p>
-        <LinkBtn
-          href="/stories"
-          text="Visit our Portfolio"
-          icon={
-            <svg
-              className="icon icon-tabler icon-tabler-arrow-up-right"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              strokeWidth="2"
-              stroke="currentColor"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M17 7l-10 10" />
-              <path d="M8 7l9 0l0 9" />
-            </svg>
-          }
-        />
+        <LinkBtn href="/stories" text="Visit our Portfolio" />
       </div>
 
-      <div className="bg-gray-600 w-full h-64 md:h-full rounded-md">
+      <div className="bg-gray-600 w-full h-64 md:h-full rounded-md overflow-hidden">
+        <div className="absolute p-4 bg-gray-800 rounded-ee-md text-white font-bold outline outline-1 ">
+          <p>Maternity</p>
+        </div>
         <Image
           alt={"Just Natural by Rod - Our Story Section Thumbnail"}
           src={
@@ -56,4 +39,4 @@ function OurStoriesSection() {
   );
 }
 
-export default OurStoriesSection;
+export default FeaturedWorkSection;
