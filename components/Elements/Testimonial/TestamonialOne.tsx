@@ -14,11 +14,14 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
-import TestamonialContent from "./Swiper/TestamonialContent";
+import TestamonialContent from "./Child/TestamonialContent";
 import SectionHeader from "../Headings/SectionHeader";
+import TestimonialContent from "./Child/TestamonialContent";
+
+import { testimonials } from "../../../constants/testimonials-data";
 
 const TestimonialOne: React.FC = () => {
-  const testamonialContainerClass = "bg-white border shadow-sm ";
+  const testamonialContainerClass = "bg-white shadow-sm ";
 
   return (
     <div className="p-2 m-6">
@@ -47,27 +50,15 @@ const TestimonialOne: React.FC = () => {
         className="mySwiper h-64 rounded-md overflow-hidden"
       >
         <div className="mx-10 p-10">
-          <SwiperSlide className={testamonialContainerClass}>
-            <TestamonialContent />
-          </SwiperSlide>
-          <SwiperSlide className={testamonialContainerClass}>
-            <TestamonialContent />
-          </SwiperSlide>
-          <SwiperSlide className={testamonialContainerClass}>
-            <TestamonialContent />
-          </SwiperSlide>
-          <SwiperSlide className={testamonialContainerClass}>
-            <TestamonialContent />
-          </SwiperSlide>
-          <SwiperSlide className={testamonialContainerClass}>
-            <TestamonialContent />
-          </SwiperSlide>
-          <SwiperSlide className={testamonialContainerClass}>
-            <TestamonialContent />
-          </SwiperSlide>
-          <SwiperSlide className={testamonialContainerClass}>
-            <TestamonialContent />
-          </SwiperSlide>
+          {testimonials.map((testimonial, index) => (
+            <SwiperSlide key={index} className={testamonialContainerClass}>
+              <TestimonialContent
+                quote={testimonial.quote}
+                author={testimonial.author}
+                rating={testimonial.rating}
+              />
+            </SwiperSlide>
+          ))}
         </div>
       </Swiper>
     </div>
