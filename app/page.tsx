@@ -38,7 +38,7 @@ export default function Home() {
 
       <ParallaxTwo />
 
-      <div className="relative flex flex-col justify-center max-w-5xl mx-auto border p-6  rounded-md mb-6 ">
+      <div className="relative flex flex-col justify-center max-w-6xl mx-auto border p-6  rounded-md mb-6 ">
         <LetsTalkSection />
       </div>
 

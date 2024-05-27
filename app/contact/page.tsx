@@ -1,4 +1,5 @@
 import LinkBtn from "@/components/Elements/Buttons/LinkBtn";
+import DirectContact from "@/components/Elements/DirectContact";
 import SectionHeader from "@/components/Elements/Headings/SectionHeader";
 import NavBar from "@/components/Header/NavBar/NavBar";
 import ContactFormWeb3 from "@/components/Sections/ContactFormWeb3";
@@ -24,6 +25,8 @@ export default function ContactPage() {
           related querie.
         </p>
       </div>
+
+      <DirectContact />
     </>
   );
 }
