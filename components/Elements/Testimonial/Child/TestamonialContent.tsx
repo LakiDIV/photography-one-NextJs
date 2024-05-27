@@ -32,7 +32,7 @@ const TestimonialContent: React.FC<TestimonialContentProps> = ({
         <CircleUserRound className="h-8 w-8 text-zinc-500 mx-auto mb-2" />
         <StarRating rating={rating} />
         <div className="text-zinc-500 mt-4 text-justify text-xs m-4 font-bold">
-          "{truncatedQuote}"
+          " {truncatedQuote} "
           <div className="mt-2 text-right">
             <span className="inline-flex align-middle">
               <Minus className="mr-1 inline-block" />

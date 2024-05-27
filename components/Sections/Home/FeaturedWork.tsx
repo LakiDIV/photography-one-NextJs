@@ -21,9 +21,9 @@ function FeaturedWorkSection() {
       </div>
 
       <div className="bg-gray-600 w-full h-64 md:h-full rounded-md overflow-hidden">
-        <div className="absolute p-4 bg-gray-800 rounded-ee-md text-white font-bold outline outline-1 ">
+        {/* <div className="absolute p-4 bg-gray-800 rounded-ee-md text-white font-bold outline outline-1 ">
           <p>Maternity</p>
-        </div>
+        </div> */}
         <Image
           alt={"Just Natural by Rod - Our Story Section Thumbnail"}
           src={

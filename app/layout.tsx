@@ -20,8 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <main>{children}</main>
+      <body
+        className={
+          inter.className + " selection:bg-orange-300 selection:text-gray-700"
+        }
+      >
+        <main className="">{children}</main>
         <MailSubscriptionsForm />
         <Footer />
       </body>
