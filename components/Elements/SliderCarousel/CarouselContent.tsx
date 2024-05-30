@@ -11,7 +11,7 @@ interface CarouselContentProps {
 const CarouselContent: React.FC<CarouselContentProps> = ({
   imageUrl,
   altText = "This image is missing an alt text",
-  imageWidth = 400,
+  imageWidth = 1200,
   imageHeight = 400,
 }) => {
   return (

@@ -4,7 +4,6 @@ import "./globals.css";
 import Footer from "@/components/Footer/Footer";
 import NavBar from "@/components/Header/NavBar/NavBar";
 import MailSubscriptionsForm from "@/components/Elements/EmailSubCard";
-import SocialBacklinks from "@/components/Social/SocialBacklinks";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +25,7 @@ export default function RootLayout({
         }
       >
         <main className="">{children}</main>
-        <MailSubscriptionsForm />
+        {/* <MailSubscriptionsForm /> */}
         <Footer />
       </body>
     </html>

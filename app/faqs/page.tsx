@@ -6,7 +6,7 @@ export default function FAQsPage() {
   return (
     <div>
       <NavBar />
-      <div className=" mx-auto max-w-5xl border rounded-sm p-4">
+      <div className=" mx-auto max-w-5xl border rounded-sm p-4 mb-4">
         <FaqItems />
       </div>
     </div>

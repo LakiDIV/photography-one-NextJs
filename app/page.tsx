@@ -13,6 +13,7 @@ import LetsTalkSection from "@/components/Sections/Home/LetsTalk";
 import FeaturedWorkSection from "@/components/Sections/Home/FeaturedWork";
 import OurServicesSection from "@/components/Sections/Home/OurServices";
 import TestimonialOne from "@/components/Elements/Testimonial/TestamonialOne";
+import SocialMediaIcons from "@/components/Social/SocialMediaIcons/SocialMediaIcons";
 
 export default function Home() {
   return (

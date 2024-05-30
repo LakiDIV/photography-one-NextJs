@@ -11,32 +11,53 @@ function SliderCarousel() {
     {
       id: 1,
       imageUrl:
-        "https://ik.imagekit.io/cjmwukblm/tr:w-800/Just%20Natural%20by%20Rod//Portfolio/4B0A0297-2.jpg?updatedAt=1715496919406",
+        "https://ik.imagekit.io/cjmwukblm/Just%20Natural%20by%20Rod//Portfolio/4B0A0297-2.jpg?updatedAt=1715496919406",
       isLandscape: true,
-    },
-    {
-      id: 2,
-      imageUrl:
-        "https://ik.imagekit.io/cjmwukblm/tr:w-800/Just%20Natural%20by%20Rod//Portfolio/0M4A0003-2.jpg?updatedAt=1715496226019",
-      isLandscape: false,
-    },
-    {
-      id: 3,
-      imageUrl:
-        "https://ik.imagekit.io/cjmwukblm/tr:w-800/Just%20Natural%20by%20Rod//Portfolio/4B0A2338-3.jpg?updatedAt=1715496238668",
-      isLandscape: false,
     },
     {
       id: 4,
       imageUrl:
-        "https://ik.imagekit.io/cjmwukblm/tr:w-800/Just%20Natural%20by%20Rod//Portfolio/4B0A7756-2.jpg?updatedAt=1715496236036",
+        "https://ik.imagekit.io/cjmwukblm/Just%20Natural%20by%20Rod//Portfolio/4B0A7756-2.jpg?updatedAt=1715496236036",
+      isLandscape: true,
+    },
+    {
+      id: 5,
+      imageUrl:
+        "https://ik.imagekit.io/cjmwukblm/Just%20Natural%20by%20Rod//Portfolio/0M4A0316-2.jpg?updatedAt=1715497037143",
       isLandscape: true,
     },
 
     {
       id: 8,
       imageUrl:
-        "https://ik.imagekit.io/cjmwukblm/tr:w-800/Just%20Natural%20by%20Rod//Portfolio/0M4A2205-2.jpg?updatedAt=1715496234710",
+        "https://ik.imagekit.io/cjmwukblm/Just%20Natural%20by%20Rod//Portfolio/0M4A2205-2.jpg?updatedAt=1715496234710",
+      isLandscape: true,
+    },
+    {
+      id: 9,
+      imageUrl:
+        "https://ik.imagekit.io/cjmwukblm/Just%20Natural%20by%20Rod//Portfolio/4B0A1326-2.jpg?updatedAt=1715496230842",
+      isLandscape: true,
+    },
+
+    {
+      id: 12,
+      imageUrl:
+        "https://ik.imagekit.io/cjmwukblm/Just%20Natural%20by%20Rod//Portfolio/0M4A6527-2.jpg?updatedAt=1715497036358",
+      isLandscape: true,
+    },
+
+    {
+      id: 13,
+      imageUrl:
+        "https://ik.imagekit.io/cjmwukblm/Just%20Natural%20by%20Rod//Portfolio/0M4A6892-2.jpg?updatedAt=1715496234565",
+      isLandscape: true,
+    },
+
+    {
+      id: 16,
+      imageUrl:
+        "https://ik.imagekit.io/cjmwukblm/Just%20Natural%20by%20Rod//Portfolio/4B0A2544-2.jpg?updatedAt=1715496226172",
       isLandscape: true,
     },
   ];
@@ -53,11 +74,11 @@ function SliderCarousel() {
           modules={[Pagination, Autoplay]}
           breakpoints={{
             640: {
-              slidesPerView: 2,
+              slidesPerView: 1,
               spaceBetween: 20,
             },
             1280: {
-              slidesPerView: 3,
+              slidesPerView: 1,
               spaceBetween: 20,
             },
           }}
