@@ -9,7 +9,10 @@ import {
 export default function SocialMediaIcons() {
   return (
     <div className="socialMediaContainer mx-auto flex flex-col items-center p-8">
-      <h1 className="text-xl font-bold mb-4">Connect with Us</h1>
+      <h1 className="text-lg font-bold mb-8 opacity-50 font-boldWrite">
+        Catch Us Online:
+      </h1>
+      <hr className="w-full border-gray-300 opacity-50 max-w-md mb-2" />
       <ul className="socialIconWrapper flex list-none p-0">
         <li className="icon facebook">
           <span className="tooltip">Facebook</span>
@@ -45,6 +48,7 @@ export default function SocialMediaIcons() {
           </a>
         </li>
       </ul>
+      <p className="md:hidden text-xs mt-2 uppercase text-gray-400 opacity-70">Double tap to select</p>
     </div>
   );
 }

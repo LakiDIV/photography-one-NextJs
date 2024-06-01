@@ -29,7 +29,6 @@ export default function ContactPage() {
       </div>
 
       <div className="mx-auto max-w-5xl p-8 my-4 border rounded-sm">
-        <h5>Other ways to contact us: </h5>
         <DirectContact />
       </div>
     </>
